@@ -16,12 +16,12 @@ const promotionSchema = new Schema({
     },
     featured: {
         type: Boolean,
-        default: true
+        default: false
     },
     cost: {
         type: Currency,
         required: true,
-        min: 1299
+        min: 0
     },
     description: {
         type: String,
